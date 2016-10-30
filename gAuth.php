@@ -207,7 +207,7 @@ class gAuth
     {
         $nbf = new DateTime($this->getNbf());
         $now = new DateTime(date('Y-m-d H:m:j'));
-        $now->modify('+ 10 minutes');
+        $now->modify('+ 2 minutes');
 
         if ($now > $nbf)
             return true;
