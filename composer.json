@@ -1,5 +1,5 @@
 {
-  "name": "gAuth/gAuth",
+  "name": "gauth/gauth",
   "type": "library",
   "description": "Auth Library for phalcon 3 based in JWT standard",
   "keywords": ["phalcon","jwt"],
