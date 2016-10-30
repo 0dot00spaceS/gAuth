@@ -1,0 +1,19 @@
+{
+  "name": "gAuth/gAuth",
+  "type": "library",
+  "description": "Auth Library for phalcon 3 based in JWT standard",
+  "keywords": ["phalcon","jwt"],
+  "homepage": "https://github.com/infobuscador/gAuth",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Iulian Gafiu",
+      "email": "weblysolutions@gmail.com",
+      "homepage": "https://github.com/infobuscador",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": ">=5.6.0"
+  }
+}
