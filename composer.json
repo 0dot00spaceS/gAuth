@@ -1,7 +1,7 @@
 {
-  "name": "gauth/gauth",
+  "name": "gauth/jwt",
   "type": "library",
-  "description": "Auth Library for phalcon 3 based in JWT standard",
+  "description": "JWT authentication library for Phalcon 3 based in Json Web Token standard",
   "keywords": ["phalcon","jwt"],
   "homepage": "https://github.com/infobuscador/gAuth",
   "license": "MIT",
