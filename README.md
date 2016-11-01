@@ -1,18 +1,23 @@
-# gAuth - JWT Phalcon 3
+# JWT Phalcon 3.x - Gauth
 
-Authorization library for Phalcon 3 based on JWT standard that can be used on traditional websites or API based applications.
+Auth library for Phalcon 3.x based on JWT standard that can be used on traditional websites or API based applications. It is recommended to upgrade your PHP installation to 5.6. because in Phalcon 3.0.0 the support for PHP 5.4 has been deprecated and in PHP 5.5 some unsafe functions has been also deprecated.
 
 ###Requirements
- - Phalcon 3
- - It is recommended to upgrade your PHP installation to 5.6. because in Phalcon 3.0.0 the support for PHP 5.4 has been deprecated and in PHP 5.5 some unsafe functions has been also deprecated.
+ - Phalcon 3.x
+ - PHP 5.6
+
 
 ###Installation
 - cd to library folder
 - git clone https://github.com/infobuscador/gAuth.git
-- In your Di Manager inject next services: 
+- In your Di Manager call services: 
 
 
 ```php
+   use Phalcon\Http\Response\Cookies;
+   use Phalcon\Http\Response;
+   use Phalcon\Http\Request;
+   use Phalcon\Crypt;
   /*
    * Load Phalcon Crypt Service
    * \Phalcon\Crypt
@@ -91,10 +96,10 @@ Authorization library for Phalcon 3 based on JWT standard that can be used on tr
 ```php
 
    /*
-    * When accessing a private route token can be validated
-    * by calling the method isValid.
+    * Token can be checked by calling isValid()
     * If any param doesn't match the condition the token will
     * be marked as invalid.
+    * @see Manual Validations below
     * */
     $app->get("/private", function(){
         if(!$this->gauth->isValid()){
