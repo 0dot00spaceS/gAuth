@@ -173,6 +173,15 @@ Auth library for Phalcon 3.x based on JWT standard that can be used on tradition
 
         // Returns token NBF as string
         $this->gauth->getNbf();
+        
+        //Returns token SUB as array
+        $this->gauth->getSub()
+        
+        //Returns SUB value by key
+        $this->gauth->getSub('email')
+        $this->gauth->getSub('id')
+        
+        
 
     });
 ```
