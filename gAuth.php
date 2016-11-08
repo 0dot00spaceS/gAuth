@@ -187,7 +187,7 @@ class gAuth
      */
     public function validIat()
     {
-        if ($this->getIat() < time())
+        if ($this->getIat() <= time())
             return true;
     }
 
